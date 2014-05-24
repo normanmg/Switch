@@ -1,0 +1,38 @@
+public class Ejercicio1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int numero=0;
+        int opcion=0;
+        String mes="";
+        char continuar;
+        boolean validar=true;
+        Scanner teclado=new Scanner(System.in);
+        classejercicio1 oclassejercicio=new classejercicio1();
+        do
+        {
+        
+        System.out.println("Digite el numero entre 1 y 12");
+        opcion=Integer.parseInt(teclado.nextLine());
+        System.out.println(oclassejercicio.Mes(opcion));
+        
+            break;
+        
+        }while (validar);
+        
+        System.out.println("Desea continuar S/N");
+           continuar=teclado.nextLine() .charAt(0);
+           if((continuar=='S')||(continuar=='s'))
+           {   
+               validar=true;
+           }
+           else
+           {
+               validar=false;
+        
+        }
+    }
+    
+}
